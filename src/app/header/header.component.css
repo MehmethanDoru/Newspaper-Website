@@ -1,0 +1,139 @@
+.header {
+  max-width: 100%;
+  top: 0;
+  left: 15%;
+  right: 15%;
+  margin: -8px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #faf9f9;
+  color: rgb(12, 40, 84);
+  font-size: 27px;
+  font-weight: bold;
+  padding: 30px;
+}
+
+input {
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid rgb(12, 40, 84);
+  border-radius: 20px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border: none;
+  outline: 1px solid #a5a09a;
+
+}
+
+.placeholder {
+  font-size: 1rem;
+}
+
+.searchButton {
+  font-size: 16px;
+  margin-left: 5px;
+  border: rgb(12, 40, 84);
+  border-radius: 50%;
+  background-color: rgb(12, 40, 84);
+  color: #fff;
+  padding: 7px 10px;
+}
+
+.searchButton:hover {
+  background-color: #fff;
+  color: rgb(12, 40, 84);
+  border: 1px solid rgb(12, 40, 84);
+  cursor: pointer;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.menu-button {
+  display: none;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu li {
+  padding: 10px;
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 20px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    max-width: 100%;
+    flex-direction: column;
+  }
+
+  .left-content {
+    margin-bottom: 10px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  input {
+    font-size: 15px;
+  }
+
+  input[type="text"] {
+    width: 70%;
+    margin: 5%;
+  }
+
+  .searchButton {
+    font-size: 15px;
+    margin-left: -5px;
+  }
+
+
+  .menu-button {
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: auto;
+    text-align: right;
+    display: block;
+  }
+
+  .name-container {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  
+}

@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #faf9f9;
+}
+.custom-container {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #faf9f9;
+}
+
+@media screen and (max-width: 768px) {
+    .custom-container {
+        max-width: 90%;
+    }
+}

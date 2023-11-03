@@ -1,0 +1,75 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faf9f9;
+    color: rgb(12, 40, 84);
+    padding: 10px;
+}
+
+.menu {
+    width: 100%;
+}
+
+.custom-hr {
+    border: none;
+    border-top: 1px solid #b1aeae;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: rgb(12, 40, 84);
+    text-decoration: none;
+}
+
+/* Hamburger menü için stil */
+.menu-button {
+    display: none;
+    /* Başlangıçta gizli */
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
+        /* Mobil görünümde gizli menü */
+    }
+
+    .menu-button {
+        display: block;
+        /* Mobil görünümde hamburger menü göster */
+    }
+}
+
+.menu ul {
+    display: flex;
+    /* Bilgisayar ekranında görünür */
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
+        /* Mobil görünümde gizli */
+    }
+
+    .menu-button {
+        display: block;
+        /* Mobil görünümde hamburger menü göster */
+    }
+
+    /* Mobil menü açıldığında görünür yapma */
+    .menu ul.open {
+        display: flex;
+    }
+}
