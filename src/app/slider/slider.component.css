@@ -13,7 +13,7 @@ body {
     margin-left: 6%;
     margin-top: 17px;
     border-radius: 25px;
-    background: rgba(225, 222, 222, 0.179);
+    background: rgba(225, 222, 222, 0.26);
 }
 
 .inner-part {
@@ -44,7 +44,7 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    opacity: 0.1;
+    opacity: 0;
 }
 
 #tap-1:checked~.inner-part .img-1,

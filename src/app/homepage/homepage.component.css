@@ -1,42 +1,89 @@
-/* 
-.slider {
-    position: relative;
-    width: 60%;
-    overflow: hidden;
-}
-.images {
+.news-container {
+    margin-top: 40%;
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-.images img {
-    height: 400px;
-    width: 100%;
-    transition: all 0.15s ease;
+
+.news-item {
+    width: calc(28% - 20px);
+    border: 1px solid #b2b0b063;
+    border-radius: 20px;
+    padding: 13px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: rgba(225, 222, 222, 0.26);
 }
-.images input {
-    display: none;
+
+.news-item:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
 }
-.dots {
+
+.news-item img {
+    outline: 2px solid #b2b0b063;
+    border-radius: 10px;
+    display: block; 
+    margin: 0 auto 9px auto; 
+    padding: 7px;
+}
+
+.news-title{
+    padding: 0 5px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    text-align: justify;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.news-author{
+    padding: 0 5px;
+    font-style: italic;
+}
+
+span{
+    padding: 0 5px;
+    font-size: 13px;
+}
+
+.bookmarks{
+    margin-left: 2px;
+    cursor: pointer;
+    color: #c9c9c9;
+}
+
+.pagination {
     display: flex;
     justify-content: center;
-    margin: 5px;
+
 }
-.dots label {
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: solid #fff 3px;
+
+.pagination button {
+    margin: 0 5px;
     cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 5px;
+    background-color: rgba(198, 199, 201, 0.305);
+    padding: 4px 8px;
+    border-radius: 50%;
+    color: #252424
 }
-.dots label:hover {background: #fff;}
-#img1:checked ~ .m1 {
-    margin-left: 0;
+
+.pagination button:hover {
+    background-color: #252424;
+    color: #d9d8d8;
 }
-#img2:checked ~ .m2 {
-    margin-left: -100%;
+.pagination button.active-page {
+    background-color: #252424;
+    color: #d9d8d8;
 }
-#img3:checked ~ .m3 {
-    margin-left: -200%;
-} */
+
+
+@media screen and (max-width: 768px) {
+    .news-container {
+        margin-top: 190%;
+    }
+
+    .news-item {
+        width: calc(70%);
+    }
+}

@@ -9,14 +9,14 @@
   </div>
   <div *ngFor="let item of news; let i = index" class="inner-part">
     <label for="imgTap" class="img">
-      <img src="https://picsum.photos/200" class="img-{{i + 1}}" alt="img{{i + 1}}">
+      <img [src]="'https://picsum.photos/200?random=' + getRandomNumber()" class="img-{{i + 1}}" alt="img{{i + 1}}">
     </label>
     <div class="content content-{{i + 1}}">
         <span>{{ formatDate(item.publishedAt) }}</span>
         <div class="title">
         {{item.title}}
       </div>
-      <button>DETAYLAR</button>
+      <button>detaylar</button>
     </div>
   </div>
 </div>

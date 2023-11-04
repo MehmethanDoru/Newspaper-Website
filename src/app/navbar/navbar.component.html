@@ -1,19 +1,12 @@
-<!-- <nav class="navbar">
-  <div class="menu">
-    <ul>
-      <li *ngFor="let category of categories">
-        <a [routerLink]="['/category', category]">{{ category }}</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<hr class="custom-hr"> -->
-
 <nav class="navbar">
   <div class="menu">
     <ul>
       <li *ngFor="let category of categories">
-        <a [routerLink]="['/category', category]" (click)="navigateToCategory(category)">{{ category }}</a>
+        <a [routerLink]="['/category', category]" 
+           (click)="navigateToCategory(category)"
+           [ngClass]="{'selected-category': category === selectedCategory}">
+          {{ category }}
+        </a>
       </li>
     </ul>
   </div>

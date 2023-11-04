@@ -24,4 +24,9 @@ export class SliderComponent implements OnInit {
     const options: Intl.DateTimeFormatOptions = { year: 'numeric', month: 'long', day: 'numeric' };
     return date.toLocaleDateString('tr-TR', options);
   } 
+
+  getRandomNumber(): number {
+    return Math.floor(Math.random() * 1000); 
+  }
+  
 }

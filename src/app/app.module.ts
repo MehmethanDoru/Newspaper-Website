@@ -18,6 +18,7 @@ import { SportsComponent } from './sports/sports.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { AboutComponent } from './about/about.component';
 import { SliderComponent } from './slider/slider.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { SliderComponent } from './slider/slider.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

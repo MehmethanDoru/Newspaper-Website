@@ -8,14 +8,14 @@ export class CategoriesService {
     return [
       'Anasayfa',
       'Kategoriler',
-      'İş Dünyası',
-      'Eğlence',
+      'Is-Dunyasi',
+      'Eglence',
       'Genel',
-      'Sağlık',
+      'Saglik',
       'Bilim',
       'Spor',
       'Teknoloji',
-      'Hakkımda',
+      'Hakkimizda',
     ];
   }
   

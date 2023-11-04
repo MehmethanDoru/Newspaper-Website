@@ -7,6 +7,13 @@
     padding: 10px;
 }
 
+.menu a.selected-category {
+    font-weight: bold;
+    color: rgb(10, 20, 207);
+    border-bottom: 1px solid rgb(45, 66, 158);
+    font-size: large;
+}
+
 .menu {
     width: 100%;
 }
