@@ -20,7 +20,7 @@ export class HomepageComponent implements OnInit {
 
   loadNews(page: number) {
     this.newsService.getNews(page).subscribe((data: any) => {
-      this.newsList = data.articles;
+      this.newsList = data.articles.slice(3,);
       this.totalResults = data.totalResults;
       this.calculatePageNumbers();
     });
@@ -28,9 +28,8 @@ export class HomepageComponent implements OnInit {
 
   // Titleda bulunan kaynak silme
   getDescriptionPart(news: any) {
-    const descriptionPart = news.title.split('- ')[0].trim();
+    const descriptionPart = news.title.split('- ' + news.author)[0].trim();
     return descriptionPart;
-    
   }
   
 

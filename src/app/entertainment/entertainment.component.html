@@ -1,1 +1,24 @@
-<p>entertainment works!</p>
+<div class="categoryTitle">
+    <p class="top">KATEGORİLER</p>
+    <p class="name">Eğlence</p>
+</div>
+<div class="news-container">
+    <div class="news-item" *ngFor="let news of newsList">
+        <div>
+            <img [src]="'https://picsum.photos/200?random=' + getRandomNumber()" alt="news{{news.author}-img}">
+        </div>
+        <div class="news-title">{{ getDescriptionPart(news) }}</div>
+        <div class="news-author">{{ news.author }}</div>
+        <span>{{ formatDate(news.publishedAt) }}
+            <br><span>Okuma Süresi: ~{{ getRandomNumber() / 100 | number: '1.0-0' }}dk</span> <i class="bookmarks fa fa-bookmark"></i>
+        </span>
+    </div>
+</div>
+
+<div class="pagination">
+    <button *ngFor="let page of pageNumbers" 
+            (click)="setPageActive(page)" 
+            [ngClass]="{'active-page': activePage === page}">
+        {{ page }}
+    </button>
+</div>

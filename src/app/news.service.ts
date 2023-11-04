@@ -9,7 +9,7 @@ export class NewsService {
   private apiUrl = 'https://newsapi.org/v2/top-headlines';
 
   constructor(private http: HttpClient) { }
-
+  
   getNews(page: number){
     return this.http.get(`${this.apiUrl}?country=tr&page=${page}&apiKey=${this.apiKey}`);
   }

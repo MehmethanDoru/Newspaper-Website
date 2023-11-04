@@ -153,7 +153,7 @@ input[type="radio"] {
 @media (max-width: 768px) {
     .news-card {
         width: 90%;
-        height: 80%;
+        height: 74%;
         margin: 10px 0 0 0;
         padding: 0;
         z-index: 10000;
