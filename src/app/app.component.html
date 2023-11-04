@@ -1,6 +1,5 @@
 <header></header>
-<navbar></navbar>
-<div *ngIf="!selectedCategory">
-  <homepage></homepage>
-</div>
-<router-outlet></router-outlet>
+<navbar (categorySelected)="onCategorySelected($event)"></navbar>
+
+
+  <router-outlet></router-outlet>

@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { CategoriesService } from '../categories.service';
 import { Router } from '@angular/router';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'navbar',
@@ -9,24 +10,19 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent {
   categories: string[];
-  router: any;
   @Output() categorySelected = new EventEmitter<string>();
 
-
-  constructor(private categoriesService: CategoriesService) {
+  constructor(private categoriesService: CategoriesService, private router: Router) {
     this.categories = this.categoriesService.getCategories();
   }
 
-  selectCategory(category: string) {
-    this.categorySelected.emit(category);
-  }
-  
   navigateToCategory(category: string) {
     if (category === 'anasayfa') {
       this.router.navigate(['/']);
     } else {
       this.router.navigate(['/category', category]);
     }
-  }
+    this.categorySelected.emit(category);
 
+  }
 }

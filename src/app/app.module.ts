@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +18,6 @@ import { SportsComponent } from './sports/sports.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { AboutComponent } from './about/about.component';
 import { SliderComponent } from './slider/slider.component';
-import { Routes } from '@angular/router';
 
 
 @NgModule({
@@ -41,7 +41,7 @@ import { Routes } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
