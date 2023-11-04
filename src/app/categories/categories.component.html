@@ -1,4 +1,3 @@
-<!-- categories.component.html -->
 <div class="categories">
     <h2>Kategorileri Filtrele</h2>
     <ul>
@@ -17,6 +16,9 @@
     </div>
     <div class="news-container">
         <div class="news-item" *ngFor="let news of categoryNews['Is-Dunyasi']">
+            <div>
+                <img [src]="'https://picsum.photos/130?random=' + getRandomNumber()" alt="news{{news.author}-img}">
+            </div>
             <div class="news-title">{{ getDescriptionPart(news) }}</div>
             <div class="news-author">{{ news.author }}</div>
             <span>{{ formatDate(news.publishedAt) }}
@@ -24,6 +26,7 @@
             </span>
         </div>
     </div>
+    <button class="routeForMore" [routerLink]="['/category/Is-Dunyasi']" >Daha Fazla</button>
 </div>
 
 <div *ngIf="selectedCategories['Eglence']" class="eglence-news">
@@ -32,6 +35,9 @@
     </div>
     <div class="news-container">
         <div class="news-item" *ngFor="let news of categoryNews['Eglence']">
+            <div>
+                <img [src]="'https://picsum.photos/130?random=' + getRandomNumber()" alt="news{{news.author}-img}">
+            </div>
             <div class="news-title">{{ getDescriptionPart(news) }}</div>
             <div class="news-author">{{ news.author }}</div>
             <span>{{ formatDate(news.publishedAt) }}
@@ -39,6 +45,7 @@
             </span>
         </div>
     </div>
+    <button class="routeForMore" [routerLink]="['/category/Eglence']" >Daha Fazla</button>
 </div>
 
 <div *ngIf="selectedCategories['Genel']" class="genel-news">
@@ -57,6 +64,7 @@
             </span>
         </div>
     </div>
+    <button class="routeForMore" [routerLink]="['/category/Genel']" >Daha Fazla</button>
 </div>
 
 <div *ngIf="selectedCategories['Saglik']" class="saglik-news">
@@ -65,6 +73,9 @@
     </div>
     <div class="news-container">
         <div class="news-item" *ngFor="let news of categoryNews['Saglik']">
+            <div>
+                <img [src]="'https://picsum.photos/130?random=' + getRandomNumber()" alt="news{{news.author}-img}">
+            </div>
             <div class="news-title">{{ getDescriptionPart(news) }}</div>
             <div class="news-author">{{ news.author }}</div>
             <span>{{ formatDate(news.publishedAt) }}
@@ -72,6 +83,7 @@
             </span>
         </div>
     </div>
+    <button class="routeForMore" [routerLink]="['/category/Saglik']" >Daha Fazla</button>
 </div>
 
 <div *ngIf="selectedCategories['Bilim']" class="bilim-news">
@@ -80,6 +92,9 @@
     </div>
     <div class="news-container">
         <div class="news-item" *ngFor="let news of categoryNews['Bilim']">
+            <div>
+                <img [src]="'https://picsum.photos/130?random=' + getRandomNumber()" alt="news{{news.author}-img}">
+            </div>
             <div class="news-title">{{ getDescriptionPart(news) }}</div>
             <div class="news-author">{{ news.author }}</div>
             <span>{{ formatDate(news.publishedAt) }}
@@ -87,6 +102,7 @@
             </span>
         </div>
     </div>
+    <button class="routeForMore" [routerLink]="['/category/Bilim']" >Daha Fazla</button>
 </div>
 
 <div *ngIf="selectedCategories['Spor']" class="spor-news">
@@ -95,6 +111,9 @@
     </div>
     <div class="news-container">
         <div class="news-item" *ngFor="let news of categoryNews['Spor']">
+            <div>
+                <img [src]="'https://picsum.photos/130?random=' + getRandomNumber()" alt="news{{news.author}-img}">
+            </div>
             <div class="news-title">{{ getDescriptionPart(news) }}</div>
             <div class="news-author">{{ news.author }}</div>
             <span>{{ formatDate(news.publishedAt) }}
@@ -102,6 +121,7 @@
             </span>
         </div>
     </div>
+    <button class="routeForMore" [routerLink]="['/category/Spor']" >Daha Fazla</button>
 </div>
 
 <div *ngIf="selectedCategories['Teknoloji']" class="teknoloji-news">
@@ -110,6 +130,9 @@
     </div>
     <div class="news-container">
         <div class="news-item" *ngFor="let news of categoryNews['Teknoloji']">
+            <div>
+                <img [src]="'https://picsum.photos/130?random=' + getRandomNumber()" alt="news{{news.author}-img}">
+            </div>
             <div class="news-title">{{ getDescriptionPart(news) }}</div>
             <div class="news-author">{{ news.author }}</div>
             <span>{{ formatDate(news.publishedAt) }}
@@ -117,5 +140,6 @@
             </span>
         </div>
     </div>
+    <button class="routeForMore" [routerLink]="['/category/Teknoloji']" >Daha Fazla</button>
 </div>
 
