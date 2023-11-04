@@ -1,0 +1,22 @@
+<div class="news-card">
+  <input type="radio" name="select" id="tap-1" checked>
+  <input type="radio" name="select" id="tap-2">
+  <input type="radio" name="select" id="tap-3">
+  <div class="sliders">
+    <label for="tap-1" class="tap tap-1"></label>
+    <label for="tap-2" class="tap tap-2"></label>
+    <label for="tap-3" class="tap tap-3"></label>
+  </div>
+  <div *ngFor="let item of news; let i = index" class="inner-part">
+    <label for="imgTap" class="img">
+      <img src="https://picsum.photos/200" class="img-{{i + 1}}" alt="img{{i + 1}}">
+    </label>
+    <div class="content content-{{i + 1}}">
+        <span>{{ formatDate(item.publishedAt) }}</span>
+        <div class="title">
+        {{item.title}}
+      </div>
+      <button>DETAYLAR</button>
+    </div>
+  </div>
+</div>

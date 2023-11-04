@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
 import { NewsService } from '../news.service';
 import { CategoriesService } from '../categories.service';
+import { ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'categories',
@@ -8,11 +10,22 @@ import { CategoriesService } from '../categories.service';
   styleUrls: ['./categories.component.css'],
   providers: [CategoriesService],
 })
-export class CategoriesComponent {
+export class CategoriesComponent implements OnInit {
   categories: string[];
+  categoryName: any;
 
-  constructor(private categoriesService: CategoriesService) {
+  constructor(private categoriesService: CategoriesService, private route: ActivatedRoute) {
     this.categories = this.categoriesService.getCategories();
+  }
+
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((params: { get: (arg0: string) => any; }) => {
+      this.categoryName = params.get('categoryName');
+      if (this.categoryName === 'anasayfa') {
+        // Burada sadece anasayfa içeriğini görüntüle
+      }
+    });
   }
 
   // news: any;

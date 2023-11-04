@@ -1,2 +1,6 @@
 <header></header>
 <navbar></navbar>
+<div *ngIf="!selectedCategory">
+  <homepage></homepage>
+</div>
+<router-outlet></router-outlet>

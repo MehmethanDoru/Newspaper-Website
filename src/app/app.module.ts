@@ -16,6 +16,9 @@ import { ScienceComponent } from './science/science.component';
 import { SportsComponent } from './sports/sports.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { AboutComponent } from './about/about.component';
+import { SliderComponent } from './slider/slider.component';
+import { Routes } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -32,6 +35,8 @@ import { AboutComponent } from './about/about.component';
     SportsComponent,
     TechnologyComponent,
     AboutComponent,
+    SliderComponent,
+    
   ],
   imports: [
     BrowserModule,
