@@ -1,1 +1,121 @@
-<p>categories works!</p>
+<!-- categories.component.html -->
+<div class="categories">
+    <h2>Kategorileri Filtrele</h2>
+    <ul>
+        <li *ngFor="let category of categories">
+            <label *ngIf="!hiddenCategories[category]">
+                <input type="checkbox" [(ngModel)]="selectedCategories[category]" (ngModelChange)="onCategorySelectionChange()" />
+                {{ category }}
+            </label>
+        </li>
+    </ul>
+</div>
+
+<div *ngIf="selectedCategories['Is-Dunyasi']" class="is-dunyasi-news">
+    <div class="categoryTitle">
+        <p class="name">İŞ DÜNYASI</p>
+    </div>
+    <div class="news-container">
+        <div class="news-item" *ngFor="let news of categoryNews['Is-Dunyasi']">
+            <div class="news-title">{{ getDescriptionPart(news) }}</div>
+            <div class="news-author">{{ news.author }}</div>
+            <span>{{ formatDate(news.publishedAt) }}
+                <br><span>Okuma Süresi: ~{{ getRandomNumber() / 100 | number: '1.0-0' }}dk</span> <i class="bookmarks fa fa-bookmark"></i>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="selectedCategories['Eglence']" class="eglence-news">
+    <div class="categoryTitle">
+        <p class="name">EĞLENCE</p>
+    </div>
+    <div class="news-container">
+        <div class="news-item" *ngFor="let news of categoryNews['Eglence']">
+            <div class="news-title">{{ getDescriptionPart(news) }}</div>
+            <div class="news-author">{{ news.author }}</div>
+            <span>{{ formatDate(news.publishedAt) }}
+                <br><span>Okuma Süresi: ~{{ getRandomNumber() / 100 | number: '1.0-0' }}dk</span> <i class="bookmarks fa fa-bookmark"></i>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="selectedCategories['Genel']" class="genel-news">
+    <div class="categoryTitle">
+        <p class="name">GENEL</p>
+    </div>
+    <div class="news-container">
+        <div class="news-item" *ngFor="let news of categoryNews['Genel']">
+            <div>
+                <img [src]="'https://picsum.photos/130?random=' + getRandomNumber()" alt="news{{news.author}-img}">
+            </div>
+            <div class="news-title">{{ getDescriptionPart(news) }}</div>
+            <div class="news-author">{{ news.author }}</div>
+            <span>{{ formatDate(news.publishedAt) }}
+                <br><span>Okuma Süresi: ~{{ getRandomNumber() / 100 | number: '1.0-0' }}dk</span> <i class="bookmarks fa fa-bookmark"></i>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="selectedCategories['Saglik']" class="saglik-news">
+    <div class="categoryTitle">
+        <p class="name">SAĞLIK</p>
+    </div>
+    <div class="news-container">
+        <div class="news-item" *ngFor="let news of categoryNews['Saglik']">
+            <div class="news-title">{{ getDescriptionPart(news) }}</div>
+            <div class="news-author">{{ news.author }}</div>
+            <span>{{ formatDate(news.publishedAt) }}
+                <br><span>Okuma Süresi: ~{{ getRandomNumber() / 100 | number: '1.0-0' }}dk</span> <i class="bookmarks fa fa-bookmark"></i>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="selectedCategories['Bilim']" class="bilim-news">
+    <div class="categoryTitle">
+        <p class="name">BİLİM</p>
+    </div>
+    <div class="news-container">
+        <div class="news-item" *ngFor="let news of categoryNews['Bilim']">
+            <div class="news-title">{{ getDescriptionPart(news) }}</div>
+            <div class="news-author">{{ news.author }}</div>
+            <span>{{ formatDate(news.publishedAt) }}
+                <br><span>Okuma Süresi: ~{{ getRandomNumber() / 100 | number: '1.0-0' }}dk</span> <i class="bookmarks fa fa-bookmark"></i>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="selectedCategories['Spor']" class="spor-news">
+    <div class="categoryTitle">
+        <p class="name">SPOR</p>
+    </div>
+    <div class="news-container">
+        <div class="news-item" *ngFor="let news of categoryNews['Spor']">
+            <div class="news-title">{{ getDescriptionPart(news) }}</div>
+            <div class="news-author">{{ news.author }}</div>
+            <span>{{ formatDate(news.publishedAt) }}
+                <br><span>Okuma Süresi: ~{{ getRandomNumber() / 100 | number: '1.0-0' }}dk</span> <i class="bookmarks fa fa-bookmark"></i>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="selectedCategories['Teknoloji']" class="teknoloji-news">
+    <div class="categoryTitle">
+        <p class="name">TEKNOLOJİ</p>
+    </div>
+    <div class="news-container">
+        <div class="news-item" *ngFor="let news of categoryNews['Teknoloji']">
+            <div class="news-title">{{ getDescriptionPart(news) }}</div>
+            <div class="news-author">{{ news.author }}</div>
+            <span>{{ formatDate(news.publishedAt) }}
+                <br><span>Okuma Süresi: ~{{ getRandomNumber() / 100 | number: '1.0-0' }}dk</span> <i class="bookmarks fa fa-bookmark"></i>
+            </span>
+        </div>
+    </div>
+</div>
+

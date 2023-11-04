@@ -19,6 +19,8 @@ import { TechnologyComponent } from './technology/technology.component';
 import { AboutComponent } from './about/about.component';
 import { SliderComponent } from './slider/slider.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
@@ -44,6 +46,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     HttpClientModule,
     FontAwesomeModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
