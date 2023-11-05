@@ -12,11 +12,7 @@
   font-size: 27px;
   font-weight: bold;
   padding: 30px;
-}
-
-.error-message {
-  font-size: 15px;
-  color: rgb(228, 55, 55)
+  font-family: 'Quicksand', sans-serif;
 }
 
 input {
@@ -24,6 +20,8 @@ input {
   padding: 5px;
   border: 1px solid rgb(12, 40, 84);
   border-radius: 20px;
+  caret-color: #fd3535;
+
 }
 
 .input:focus {
@@ -37,11 +35,11 @@ input[type="text"]:focus {
 }
 
 .placeholder {
-  font-size: 1rem;
+  font-size: 13px;
 }
 
 .searchButton {
-  font-size: 16px;
+  font-size: 12px;
   margin-left: 5px;
   border: rgb(12, 40, 84);
   border-radius: 50%;
@@ -139,6 +137,4 @@ input[type="text"]:focus {
     flex-grow: 1;
     text-align: center;
   }
-
-  
 }

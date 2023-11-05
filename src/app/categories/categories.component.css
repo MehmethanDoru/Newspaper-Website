@@ -1,4 +1,4 @@
-/* FILTRELEME START */
+/* F'ltreleme Start */
 .categories {
   background-color: #b2b0b063;
   padding: 20px;
@@ -38,6 +38,7 @@ input[type="checkbox"] {
   margin-right: 10px;
   transform: scale(1.2);
 }
+/* Filtreleme End */
 
 .name {
   display: inline-block;
@@ -57,7 +58,7 @@ input[type="checkbox"] {
 
 .news-item {
   width: calc(70%);
-  border: 1px solid #b2b0b063;
+  border: 1px solid #faf9f9;
   border-radius: 20px;
   padding: 13px;
   margin: 10px 7px 7px 7px;
@@ -70,8 +71,7 @@ input[type="checkbox"] {
 }
 
 .news-item img {
-  outline: 2px solid #b2b0b063;
-  border-radius: 10px;
+  border-radius: 30px;
   display: block;
   margin: 0 auto 9px auto;
   padding: 7px;

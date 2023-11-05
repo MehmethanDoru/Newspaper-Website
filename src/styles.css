@@ -1,14 +1,22 @@
 body {
     background-color: #faf9f9;
 }
+
 .custom-container {
     max-width: 70%;
     margin: 0 auto;
     background-color: #faf9f9;
 }
 
+.footerContainer {
+    max-width: 100%;
+    margin: 50px 0 0 0;
+    padding: 0;
+    background-color: rgba(225, 222, 222, 0.26);
+}
+
 @media screen and (max-width: 768px) {
     .custom-container {
-        max-width: 90%;
+        max-width: 100%;
     }
 }

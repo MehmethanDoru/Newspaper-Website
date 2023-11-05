@@ -21,6 +21,7 @@ import { SliderComponent } from './slider/slider.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -41,6 +42,7 @@ import { SearchComponent } from './search/search.component';
     AboutComponent,
     SliderComponent,
     SearchComponent,
+    FooterComponent,
     
   ],
   imports: [

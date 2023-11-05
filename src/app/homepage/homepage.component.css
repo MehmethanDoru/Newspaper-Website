@@ -6,7 +6,7 @@
 
 .news-item {
     width: calc(28%);
-    border: 1px solid #b2b0b063;
+    border: 1px solid #faf9f9;
     border-radius: 20px;
     padding: 13px;
     margin: 19px 7px 7px 7px;
@@ -19,8 +19,7 @@
 }
 
 .news-item img {
-    outline: 2px solid #b2b0b063;
-    border-radius: 10px;
+    border-radius: 30px;
     display: block; 
     margin: 0 auto 9px auto; 
     padding: 7px;

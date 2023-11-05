@@ -40,6 +40,10 @@ export class CategoriesComponent implements OnInit {
     this.loadNewsForSelectedCategories();
   }
 
+  selectedCategoriesNotEmpty(): boolean {
+    return Object.values(this.selectedCategories).some(selected => selected);
+  }
+
   loadNewsForSelectedCategories() {
 
     const selectedCategories = Object.keys(this.selectedCategories).filter(

@@ -13,7 +13,7 @@ body {
     margin-left: 6%;
     margin-top: 17px;
     border-radius: 25px;
-    background: rgba(225, 222, 222, 0.26);
+    background: rgba(225, 222, 222, 0.501);
 }
 
 .inner-part {
@@ -30,7 +30,7 @@ body {
     height: 260px;
     width: 260px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 12px;
 }
 
 #imgTap:checked~.inner-part .img {
