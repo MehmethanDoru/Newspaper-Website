@@ -97,11 +97,13 @@
     cursor: pointer;
   }
 
-  .footer-col .icons i {
+  .footer-col .icons img {
     color: #afb6c7;
+    width: 24px;
+    height: 24px;
   }
 
-  .footer-col .icons i:hover  {
+  .footer-col .icons img:hover  {
     color: #fff;
   }
 
