@@ -23,7 +23,6 @@ export class FooterComponent {
     });
   }
 
-  
   navigateToCategory(category: string) {
     if (category === 'anasayfa') {
       this.router.navigate(['/']);
@@ -32,5 +31,4 @@ export class FooterComponent {
     }
     this.categorySelected.emit(category);
   }
-  
 }

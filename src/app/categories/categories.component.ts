@@ -36,7 +36,7 @@ export class CategoriesComponent implements OnInit {
   }
 
   onCategorySelectionChange() {
-    // Burada seçilen kategorilere göre haberleri alın
+    // secilen kategoriye gore
     this.loadNewsForSelectedCategories();
   }
 
@@ -52,7 +52,7 @@ export class CategoriesComponent implements OnInit {
     console.log('SEELECT:' + selectedCategories);
 
     if (selectedCategories.length === 0) {
-      return; // Hiçbir kategori seçilmediyse işlem yapmayın
+      return; // kategori secmediysen bos kalsin
     }
 
     for (const category of selectedCategories) {

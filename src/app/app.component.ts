@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Newspaper';
-  selectedCategory: boolean = false; // başlangıçta false değeri atandı
+  selectedCategory: boolean = false;
   
 
   onCategorySelected(category: string) {

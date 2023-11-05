@@ -1,8 +1,8 @@
 body {
-    text-align: center; /* Sayfa içeriğini ortala */
+    text-align: center; 
   }
   .container {
-    text-align: center; /* İçerikleri sola hizala */
+    text-align: center; 
     display: inline-block;
   }
   #about {
@@ -28,23 +28,23 @@ body {
 
   @keyframes slide-in {
     0% {
-        transform: translateX(-100%); /* Başlangıçta metni sola kaydır */
-        opacity: 0; /* Başlangıçta görünmez yap */
+        transform: translateX(-100%);
+        opacity: 0; 
     }
     100% {
-        transform: translateX(0); /* Sonunda metni orijinal konumuna getir */
-        opacity: 1; /* Sonunda tamamen görünür yap */
+        transform: translateX(0); 
+        opacity: 1; 
     }
 }
 
 @keyframes slide-down {
     0% {
-        transform: translateY(-100%); /* Başlangıçta metni yukarı taşı */
-        opacity: 0; /* Başlangıçta görünmez yap */
+        transform: translateY(-100%);
+        opacity: 0;
     }
     100% {
-        transform: translateY(0); /* Sonunda metni orijinal konumuna getir */
-        opacity: 1; /* Sonunda tamamen görünür yap */
+        transform: translateY(0);
+        opacity: 1; 
     }
 }
 
@@ -56,12 +56,12 @@ body {
 
   @keyframes slide-right {
     0% {
-        transform: translateX(100%); /* Başlangıçta metni sağa taşı */
-        opacity: 0; /* Başlangıçta görünmez yap */
+        transform: translateX(100%); 
+        opacity: 0; 
     }
     100% {
-        transform: translateX(0); /* Sonunda metni orijinal konumuna getir */
-        opacity: 1; /* Sonunda tamamen görünür yap */
+        transform: translateX(0); 
+        opacity: 1;
     }
 }
 
@@ -95,8 +95,8 @@ body {
 
   .section2 {
     display: flex;
-    justify-content: center; /* İçeriği yatayda ortala */
-    align-items: center; /* İçeriği dikeyde ortala */
+    justify-content: center; 
+    align-items: center;
   }
 
   a {
@@ -114,8 +114,8 @@ body {
   }
 
   .email, .phone {
-    text-align: center; /* İçeriği ortala */
-    margin: 10px; /* İçerikler arasına boşluk ekleyin */
+    text-align: center; 
+    margin: 10px;
   }
 
   .emailText {
@@ -133,8 +133,8 @@ body {
     gap: 30px;
     cursor: pointer;
     display: flex;
-    justify-content: center; /* İçeriği yatayda ortala */
-    align-items: center; /* İçeriği dikeyde ortala */
+    justify-content: center; 
+    align-items: center; 
   }
 
   .icons img {
@@ -148,7 +148,7 @@ body {
   }
 
   .icons a {
-    margin: 10px; /* İçerikler arasına boşluk ekleyin */
+    margin: 10px; 
   }
   /* social media end */
 
@@ -156,7 +156,7 @@ body {
 .education-section {
     text-align: center;
     padding: 20px;
-    color: rgb(12, 40, 84); /* Kırmızıya yakın bir renk */
+    color: rgb(12, 40, 84); 
 }
 
 .section-title {
@@ -182,7 +182,7 @@ body {
 .university {
     font-size: 24px;
     font-weight: bold;
-    color: rgb(222, 137, 17); /* Kırmızıya yakın bir renk */
+    color: rgb(222, 137, 17); 
 }
 
 .program {
@@ -199,17 +199,17 @@ body {
 .volunteam {
     width: 50%;
     text-align: center;
-    justify-content: center; /* İçeriği yatayda ortala */
+    justify-content: center; 
     align-items: center; 
 }
 
 .section3 {
     display: flex;
-    justify-content: center; /* İçeriği yatayda ortala */
-    align-items: center; /* İçeriği dikeyde ortala */
+    justify-content: center; 
+    align-items: center; 
   }
   .volunteam {
-    text-align: left; /* İçeriği sola hizala */
+    text-align: left; 
     margin: 20px; 
   }
 
@@ -374,7 +374,7 @@ body {
 /* project */
 .projects {
     display: flex;
-      justify-content: center; /* Projeleri yatayda ortala */
+      justify-content: center;
       gap: 20px; 
 }
 
@@ -449,41 +449,40 @@ body {
   }
 
   /* responsive */
-  /* Genel Responsive Stiller */
 @media (max-width: 768px) {
     #left {
-      width: 100%; /* Sol içeriği tam genişlik yap */
-      text-align: center; /* Metni ortala */
+      width: 100%;
+      text-align: center;
       margin: 0;
     }
     #right {
-      width: 100%; /* Sağ içeriği tam genişlik yap */
-      text-align: center; /* Metni ortala */
-      margin: 20px 0; /* Yükseklik ekleyin */
+      width: 100%; 
+      text-align: center;
+      margin: 20px 0;
     }
     .section2 {
-      margin-top: 20px; /* Yukarıda fazla boşluk bırakın */
+      margin-top: 20px;
     }
     .section2 .email, .section2 .phone {
-      margin: 10px 0; /* İçeriğin altındaki boşluğu azaltın */
+      margin: 10px 0; 
     }
     .container__progressbars {
-      flex-direction: column; /* İlerleme çubuklarını dikey düzende gösterin */
-      align-items: center; /* İlerleme çubuklarını yatayda ortala */
+      flex-direction: column; 
+      align-items: center;
     }
     .projects {
-      flex-direction: column; /* Projeleri dikey düzende gösterin */
+      flex-direction: column; 
     }
     .card {
-      width: 100%; /* Kartları tam genişlik yap */
+      width: 100%;
     }
 
     .section3 {
         display: flex;
-        flex-direction: column; /* İçeriği dikey düzende gösterin */
-        align-items: center; /* İçeriği yatayda ortala */
-        text-align: center; /* İçeriği ortala */
-        margin-top: 40px; /* Yukarıda fazla boşluk bırakın */
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+        margin-top: 40px;
       }
       
       .volunteerTitle {
@@ -491,7 +490,7 @@ body {
         height: 100%;
         padding: 50px 10px;
         background-color: rgba(0, 0, 0, 0.514);
-        margin-bottom: 20px; /* Altında boşluk bırakın */
+        margin-bottom: 20px; 
         font-family: 'Roboto', sans-serif;
 
       }
@@ -505,13 +504,13 @@ body {
 
 .cv-button a {
     display: inline-block;
-    background-color: rgb(179, 104, 0); /* Butonun arka plan rengi */
-    color: #fff; /* Buton metin rengi */
-    padding: 10px 20px; /* Buton boyutu ve iç boşluğu */
-    text-decoration: none; /* Link altı çizgisini kaldır */
-    border-radius: 5px; /* Butonun köşe yuvarlama */
-    font-weight: bold; /* Metin kalın yapma */
-    transition: background-color 0.3s; /* Hover etkisi için arka plan rengini değiştirme */
+    background-color: rgb(179, 104, 0);
+    color: #fff; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold;
+    transition: background-color 0.3s; 
 }
 
 .cv-button a:hover {

@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CategoriesService } from '../categories.service';
 import { Router, NavigationEnd } from '@angular/router';
 import { AppComponent } from '../app.component';
@@ -19,7 +19,7 @@ export class NavbarComponent {
       if (val instanceof NavigationEnd) {
         // Her sayfa değiştiğinde seçili kategoriyi güncelle
         console.log(val);
-        this.selectedCategory = val.url.split('/')[2]; // Örnek URL yapısına göre düzenlenmeli
+        this.selectedCategory = val.url.split('/')[2]; 
         console.log(this.selectedCategory);
       }
     });

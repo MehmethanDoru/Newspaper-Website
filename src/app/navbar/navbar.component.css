@@ -105,7 +105,7 @@
     }
 
     .menu li {
-        flex: 0 0 calc(33% - 10px); /* 3 öğe yan yana olacak şekilde */
-        margin: 0 5px; /* Öğeler arasında boşluk */
+        flex: 0 0 calc(33% - 10px);
+        margin: 0 5px;
     }
 }

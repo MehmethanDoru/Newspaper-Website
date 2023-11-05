@@ -52,7 +52,7 @@ export class EntertainmentComponent implements OnInit {
   // secili sayfa gosterimi
   activePage: number = 1;
   setPageActive(page: number) {
-    this.activePage = page; // Aktif sayfayı güncelle
-    this.loadNews(page); // Haberleri yükle
+    this.activePage = page; 
+    this.loadNews(page);
   }
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NewsService } from '../news.service'; // NewsService'nin yolunu düzgün olarak belirttiğinizden emin olun
+import { NewsService } from '../news.service'; 
 
 @Component({
   selector: 'homepage',
@@ -7,7 +7,7 @@ import { NewsService } from '../news.service'; // NewsService'nin yolunu düzgü
   styleUrls: ['./homepage.component.css'],
 })
 export class HomepageComponent implements OnInit {
-  newsList: any[] = []; // newsList özelliğini tanımlayın
+  newsList: any[] = []; 
   currentPage: number = 1;
   totalResults: number = 0;
   pageNumbers: number[] = [];
@@ -34,7 +34,7 @@ export class HomepageComponent implements OnInit {
   
 
   calculatePageNumbers() {
-    const totalPages = Math.ceil(this.totalResults / 20); // Sayfa başına haber sayısı API'ye göre değişebilir
+    const totalPages = Math.ceil(this.totalResults / 20); // apiden direkt 20 haber geliyor sayfa basina
     this.pageNumbers = Array(totalPages)
       .fill(0)
       .map((x, i) => i + 1);
@@ -53,7 +53,7 @@ export class HomepageComponent implements OnInit {
   // secili sayfa gosterimi
   activePage: number = 1;
   setPageActive(page: number) {
-    this.activePage = page; // Aktif sayfayı güncelle
-    this.loadNews(page); // Haberleri yükle
+    this.activePage = page; 
+    this.loadNews(page);
   }
 }
