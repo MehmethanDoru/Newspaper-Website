@@ -3,14 +3,6 @@
     <div class="name-container">
       <span>Mehmethan Doru</span>
     </div>
-    <div class="menu-button" (click)="toggleMenu()"><i class="fa fa-bars"></i></div>
-    <div class="mobile-menu" *ngIf="menuOpen">
-      <ul>
-        <li *ngFor="let category of categories">
-          <a [routerLink]="['/category', category]" (click)="closeMenu()">{{ category }}</a>
-        </li>
-      </ul>
-    </div>
   </div>
   <div class="right-content">
     <input class="placeholder" type="text" placeholder="Haber Ara... (min 3 harf)" [(ngModel)]="searchQuery">

@@ -34,4 +34,21 @@ export class NavbarComponent {
     this.categorySelected.emit(category);
 
   }
+
+  showMenu: boolean = false;
+
+ toggleMenu() {
+  this.showMenu = !this.showMenu;
+  const menuButton = document.querySelector('.menu-button') as HTMLElement | null;
+  if (menuButton) {
+    if (this.showMenu) {
+      menuButton.style.marginRight = '0';
+    } else {
+      menuButton.style.marginRight = '50%';
+    }
+  }
 }
+
+  
+}
+

@@ -41,42 +41,71 @@
     text-decoration: none;
 }
 
-/* Hamburger menü için stil */
+/* Hamburger menü */
 .menu-button {
     display: none;
-    /* Başlangıçta gizli */
-}
-
-@media (max-width: 768px) {
-    .menu ul {
-        display: none;
-        /* Mobil görünümde gizli menü */
-    }
-
-    .menu-button {
-        display: block;
-        /* Mobil görünümde hamburger menü göster */
-    }
 }
 
 .menu ul {
     display: flex;
-    /* Bilgisayar ekranında görünür */
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu .logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.menu-button {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-button .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
 }
 
 @media (max-width: 768px) {
     .menu ul {
         display: none;
-        /* Mobil görünümde gizli */
+        flex-direction: row;
+        text-align: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+
+    .menu ul.open {
+        display: flex;
+        background-color: rgba(225, 222, 222, 0.26);
+        border-radius: 20px;
+        padding: 8px;
+        border: 1px solid rgba(54, 54, 54, 0.964) ;
     }
 
     .menu-button {
         display: block;
-        /* Mobil görünümde hamburger menü göster */
+        margin-top: -20px;
+        margin-right: 50%;
     }
 
-    /* Mobil menü açıldığında görünür yapma */
-    .menu ul.open {
-        display: flex;
+    .menu li {
+        flex: 0 0 calc(33% - 10px); /* 3 öğe yan yana olacak şekilde */
+        margin: 0 5px; /* Öğeler arasında boşluk */
     }
 }

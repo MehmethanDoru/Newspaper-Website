@@ -147,7 +147,7 @@ span {
   color: #FFFFFF;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 678px) {
   .news-item {
     margin-left: 10%;
     width: calc(80%);
@@ -160,7 +160,7 @@ span {
   }
 
   .name {
-    margin-top: 75%;
+    margin-top: 92%;
     margin-bottom: 30px;
   }
 
@@ -169,14 +169,14 @@ span {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 679px) {
   .news-item {
     margin: 30px 7px 7px 28%;
     width: calc(90%);
   }
 
   .categories {
-    width: calc(10%);
+    width: calc(15%);
   }
 
   label {

@@ -6,7 +6,7 @@ import { query } from '@angular/animations';
   providedIn: 'root'
 })
 export class NewsService {
-  private apiKey = 'd808384e12e34646b257be6fdccea647';
+  private apiKey = 'e8713d12bbc04ec99a550c671618934e';
   private apiUrl = 'https://newsapi.org/v2/top-headlines';
 
   constructor(private http: HttpClient) { }

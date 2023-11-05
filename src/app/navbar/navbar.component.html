@@ -1,4 +1,4 @@
-<nav class="navbar">
+<!-- <nav class="navbar">
   <div class="menu">
     <ul>
       <li *ngFor="let category of categories">
@@ -11,4 +11,23 @@
     </ul>
   </div>
 </nav>
-<hr class="custom-hr">
+<hr class="custom-hr"> -->
+<nav class="navbar">
+  <div class="menu">
+    <ul [ngClass]="{'open': showMenu}">
+      <li *ngFor="let category of categories">
+        <a [routerLink]="['/category', category]" 
+           (click)="navigateToCategory(category)"
+           [ngClass]="{'selected-category': category === selectedCategory}">
+          {{ category }}
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="menu-button" (click)="toggleMenu()" >
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+</nav>
+

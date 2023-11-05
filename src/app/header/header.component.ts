@@ -18,16 +18,7 @@ export class HeaderComponent {
     this.categories = this.categoriesService.getCategories();
   }
 
-  menuOpen = false;
-
-  toggleMenu() {
-    this.menuOpen = !this.menuOpen;
-  }
-
-  closeMenu() {
-    this.menuOpen = false;
-  }
-
+ 
   openSearchPage(word: string) {
     this.router.navigate(['/search'], {
       queryParams: { query: this.searchQuery },
