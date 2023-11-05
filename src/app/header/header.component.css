@@ -14,6 +14,11 @@
   padding: 30px;
 }
 
+.error-message {
+  font-size: 15px;
+  color: rgb(228, 55, 55)
+}
+
 input {
   font-size: 20px;
   padding: 5px;

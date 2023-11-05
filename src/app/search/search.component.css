@@ -1,0 +1,117 @@
+.top {
+    position: relative;
+    margin-top: 35px;
+    margin-left: 8px;
+    font-size: 15px;
+    color: #aaa9a9;
+}
+
+.name {
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 8px;
+    margin-top: -30px;
+    font-size: 17px;
+    border-bottom: 1px solid #202020;
+    color: #444444;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    width: calc(28%);
+    border: 1px solid #b2b0b063;
+    border-radius: 20px;
+    padding: 13px;
+    margin: 30px 7px 7px 7px;
+    background-color: rgba(225, 222, 222, 0.26);
+}
+
+.news-item:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s;
+}
+
+.news-item img {
+    outline: 2px solid #b2b0b063;
+    border-radius: 10px;
+    display: block; 
+    margin: 0 auto 9px auto; 
+    padding: 7px;
+}
+
+.news-title{
+    padding: 0 5px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    text-align: justify;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.news-author{
+    padding: 0 5px;
+    font-style: italic;
+}
+
+span{
+    padding: 0 5px;
+    font-size: 13px;
+}
+
+.bookmarks{
+    margin-left: 2px;
+    cursor: pointer;
+    color: #c9c9c9;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: rgba(198, 199, 201, 0.305);
+    padding: 4px 8px;
+    border-radius: 50%;
+    color: #252424
+}
+
+.pagination button:hover {
+    background-color: #252424;
+    color: #d9d8d8;
+}
+.pagination button.active-page {
+    background-color: #252424;
+    color: #d9d8d8;
+}
+
+
+@media screen and (max-width: 768px) {
+    .news-item {
+        margin-left: 10%;
+        width: calc(70%);
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .news-item {
+        margin-left: 10%;
+        width: calc(30%);
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    .news-item {
+        margin: 30px 7px 7px 7px;
+        width: calc(28%);
+    }
+}

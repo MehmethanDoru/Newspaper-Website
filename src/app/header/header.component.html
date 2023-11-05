@@ -13,7 +13,7 @@
     </div>
   </div>
   <div class="right-content">
-    <input class="placeholder" type="text" placeholder="Haber Ara...">
-    <button class="searchButton"><i class="fa fa-search"></i></button>
+    <input class="placeholder" type="text" placeholder="Haber Ara... (min 3 harf)" [(ngModel)]="searchQuery">
+    <button class="searchButton" (click)="searchQuery.length >= 3 && openSearchPage(searchQuery)"><i class="fa fa-search"></i></button>
   </div>
 </div>

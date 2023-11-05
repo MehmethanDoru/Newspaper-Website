@@ -10,6 +10,7 @@ import { GeneralComponent } from './general/general.component';
 import { HealthComponent } from './health/health.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { AboutComponent } from './about/about.component';
+import { SearchComponent } from './search/search.component';
 
 const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'category/Spor', component: SportsComponent }, 
   { path: 'category/Teknoloji', component: TechnologyComponent }, 
   { path: 'category/Hakkimizda', component: AboutComponent }, 
+  { path: 'search', component: SearchComponent },
   { path: 'category/:id', component: CategoriesComponent }, 
   { path: 'category/:categoryName', component: CategoriesComponent },
   { path: '**', redirectTo: '' },

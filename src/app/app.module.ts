@@ -20,6 +20,7 @@ import { AboutComponent } from './about/about.component';
 import { SliderComponent } from './slider/slider.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './search/search.component';
 
 
 
@@ -39,6 +40,7 @@ import { FormsModule } from '@angular/forms';
     TechnologyComponent,
     AboutComponent,
     SliderComponent,
+    SearchComponent,
     
   ],
   imports: [

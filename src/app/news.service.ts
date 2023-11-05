@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { query } from '@angular/animations';
 
 @Injectable({
   providedIn: 'root'
@@ -18,4 +19,7 @@ export class NewsService {
     return this.http.get(`${this.apiUrl}?country=tr&category=${category}&page=${page}&apiKey=${this.apiKey}`);
   }
   
+  getNewsWithQuery(word: string, page: number) {
+    return this.http.get(`${this.apiUrl}?country=tr&q=${word}&page=${page}&apiKey=${this.apiKey}`);
+  }
 }
